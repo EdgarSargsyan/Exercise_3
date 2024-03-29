@@ -58,7 +58,7 @@ resource "aws_lb_listener" "my_listener" {
 # Attach ALB Target Group to ALB
 resource "aws_lb_target_group_attachment" "my_tg_attachment" {
   target_group_arn = aws_lb_target_group.my_tg.arn
-  target_id        = aws_s3_bucket.es-s3-bucket.arn  # Specify your S3 bucket ARN here
+  target_id        = aws_s3_bucket.ess3bucket.arn  
   port             = 80
 }
 
